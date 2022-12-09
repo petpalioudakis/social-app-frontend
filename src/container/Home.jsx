@@ -63,7 +63,7 @@ export const Home = () => {
                 onClick={() => toggleSidebar(false)}
               />
             </div>
-            <Sidebar closeToggle={toggleSidebar} user={user && user} />
+            <Sidebar closeToggle={setShowSidebar} user={user && user} />
           </div>
         )}
       </div>

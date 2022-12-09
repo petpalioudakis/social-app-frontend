@@ -10,12 +10,13 @@ export const Login = () => {
     const userProfileInfo = decodeJwt(credentialResponse.credential);
     localStorage.setItem('user', JSON.stringify(userProfileInfo));
 
-    const { email, sub, picture } = userProfileInfo;
+    const { name, email, sub, picture } = userProfileInfo;
     const doc = {
       _id: sub,
       _type: 'user',
       image: picture,
-      userName: email.split('@')[0]
+      userName: name,
+      email
     };
     await client.createIfNotExists(doc);
     navigate('/', { replace: true });
