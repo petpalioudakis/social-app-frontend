@@ -1,3 +1,9 @@
 export { Sidebar } from './Sidebar';
 export { UserProfile } from './UserProfile';
 export { Login } from './Login';
+export { Search } from './Search';
+export { Feed } from './Feed';
+export { Pin } from './Pin';
+export { PinDetail } from './PinDetail';
+export { CreatePin } from './CreatePin';
+export { Navbar } from './Navbar';
